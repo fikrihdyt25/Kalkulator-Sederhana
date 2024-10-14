@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body style="background-color: #005eff;">
+    <nav style="background-color: #003399; padding: 10px; text-align: center; position: fixed; top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center;">
+        <img src="dist/kom.png" alt="Logo Kominfo" style="height: 30px; margin-right: 10px;">
+        <h1 style="color: white; margin: 0; font-size: 24px;">Kalkulator Sederhana</h1>
+    </nav>
+    <div class="calculator" style="transform: scale(1.2); margin: 50px auto;">
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <input type="text" id="display" readonly style="font-size: 24px; height: 50px; flex-grow: 1;">
+            <button onclick="backspace()" style="font-size: 24px; padding: 15px; margin-left: 10px;">&#x2716;</button>
+        </div>
+        <div class="buttons">
+            <button onclick="appendToDisplay('7')" style="font-size: 24px; padding: 15px;">7</button>
+            <button onclick="appendToDisplay('8')" style="font-size: 24px; padding: 15px;">8</button>
+            <button onclick="appendToDisplay('9')" style="font-size: 24px; padding: 15px;">9</button>
+            <button onclick="appendToDisplay('+')" style="font-size: 24px; padding: 15px;">+</button>
+            <button onclick="appendToDisplay('4')" style="font-size: 24px; padding: 15px;">4</button>
+            <button onclick="appendToDisplay('5')" style="font-size: 24px; padding: 15px;">5</button>
+            <button onclick="appendToDisplay('6')" style="font-size: 24px; padding: 15px;">6</button>
+            <button onclick="appendToDisplay('-')" style="font-size: 24px; padding: 15px;">-</button>
+            <button onclick="appendToDisplay('1')" style="font-size: 24px; padding: 15px;">1</button>
+            <button onclick="appendToDisplay('2')" style="font-size: 24px; padding: 15px;">2</button>
+            <button onclick="appendToDisplay('3')" style="font-size: 24px; padding: 15px;">3</button>
+            <button onclick="appendToDisplay('*')" style="font-size: 24px; padding: 15px;">*</button>
+            <button onclick="appendToDisplay('0')" style="font-size: 24px; padding: 15px;">0</button>
+            <button onclick="clearDisplay()" style="font-size: 24px; padding: 15px;">C</button>
+            <button onclick="calculate()" style="font-size: 24px; padding: 15px;">=</button>
+            <button onclick="appendToDisplay('/')" style="font-size: 24px; padding: 15px;">/</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
